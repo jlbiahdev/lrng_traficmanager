@@ -1,0 +1,160 @@
+    body {
+        font-family: Arial, sans-serif;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        position: relative;
+        background-color:#878484;
+        /* background-color:red; */
+        height: auto;
+        width: 71.5rem;
+        /* margin: 0 auto; */
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;    
+        gap: 0;
+     
+        /* border: 9px solid #cccccc; */
+    }
+
+    .map {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+
+        align-items: start;
+        align-content: start;
+        justify-content: start;
+
+        background-color: transparent;
+        width: 100%;
+     
+        padding: 0;
+        margin: 0;
+    }
+
+    .area {
+        position: relative;
+        background-color: transparent;
+        height: 5rem;
+        width: 5rem;
+     
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .area.grass {
+        background-color: rgb(110, 220, 110);
+    }
+
+.car {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 5rem;
+    width: 3rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+.wheel {
+    background-color: rgb(62, 56, 56);
+    height: 1rem;
+    width: .6rem;
+    border-radius: 2px;
+}
+
+.lt-wheel {
+    position: absolute;
+    top: 10px;
+    left: -7px;
+}
+
+.rt-wheel {
+    position: absolute;
+    top: 10px;
+    right: -7px;
+}
+.rb-wheel {
+    position: absolute;
+    bottom: 10px;
+    right: -7px;
+}
+
+.lb-wheel {
+    position: absolute;
+    bottom: 10px;
+    left: -7px;
+}
+
+.touchpad {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    background-color: rgb(14, 13, 13);
+    height: 15rem;
+    width: 15rem;
+    border: 8px solid rgb(110, 220, 110);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.btn-container {
+    position: relative;
+    height: 100%;
+    /* background-color: red;
+    border: 1px soild red; */
+}
+
+.touchpad i {
+    color: rgb(110, 220, 110);
+    font-size: 3rem;
+}
+
+.touchpad .fa-circle-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.touchpad .fa-circle-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(50%, -50%);
+}
+
+.touchpad .fa-circle-arrow-up {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.touchpad .fa-circle-arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
